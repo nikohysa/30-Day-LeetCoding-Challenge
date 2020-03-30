@@ -1,0 +1,29 @@
+{
+  "name": "leetcode_30_day_april",
+  "version": "1.0.0",
+  "description": "LeetCode 30 day challenge",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikohysa/30-Day-LeetCoding-Challenge.git"
+  },
+  "keywords": [
+    "LeetCode",
+    "30DayChallenge",
+    "Challenges",
+    "Javascript",
+    "js"
+  ],
+  "author": "Niko Hysa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikohysa/30-Day-LeetCoding-Challenge/issues"
+  },
+  "homepage": "https://github.com/nikohysa/30-Day-LeetCoding-Challenge#readme",
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  }
+}
