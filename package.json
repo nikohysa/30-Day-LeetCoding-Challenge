@@ -5,7 +5,7 @@
   "main": " ",
   "scripts": {
     "jasmine": "jasmine",
-    "test": "jasmine src/*.spec.js"
+    "test": "jasmine src/**/*.spec.js"
   },
   "repository": {
     "type": "git",
