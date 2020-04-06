@@ -21,9 +21,9 @@ const maxProfit = (prices) => {
 /**
  *
  * @param {number} accumulator Accumulating the maximumProfit across days
- * @param currentValue The current value inside the reducer loop
- * @param currentIndex The current value
- * @param elements The elements to reduce
+ * @param {number} currentValue The current value inside the reducer loop
+ * @param {number} currentIndex The current value
+ * @param {number[]} elements The elements to reduce
  * @return {number}
  */
 const maximumProfitReducer = (accumulator, currentValue, currentIndex, elements) => {
