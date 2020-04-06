@@ -15,14 +15,22 @@
  * @return {number}
  */
 const maxProfit = (prices) => {
-    let objPrices = prices.map((value, index) => new PricePerDay(index, value));
+    return prices.reduce(maximumProfitReducer, 0);
+};
 
-    let maximumProfit = 0;
-    for (let index = 1; index < prices.length; index++) {
-        if (prices[index] > prices[index - 1])
-            maximumProfit += prices[index] - prices[index - 1];
-    }
-    return maximumProfit;
+/**
+ *
+ * @param {number} accumulator Accumulating the maximumProfit across days
+ * @param currentValue The current value inside the reducer loop
+ * @param currentIndex The current value
+ * @param elements The elements to reduce
+ * @return {number}
+ */
+const maximumProfitReducer = (accumulator, currentValue, currentIndex, elements) => {
+    const previousValue = elements[currentIndex - 1];
+    if (currentValue > previousValue)
+        accumulator += (currentValue - previousValue);
+    return accumulator;
 };
 
 module.exports = maxProfit;
